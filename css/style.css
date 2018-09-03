@@ -21,6 +21,7 @@ h2 {
     color: rgb(26, 26, 26);
 }
 h3 {
+    color: rgb(56, 56, 56);
     font-size: 30px;
 }
 th {
@@ -57,15 +58,6 @@ nav {
     height: 60px;
     padding: 15px;
 }
-/* Fixed nav */
-/* .f-nav {
-    z-index: 9999; 
-    position: fixed;
-    left: 0;
-    top: 0;
-    background: #ffffff;
-    box-shadow: rgba(0,0,0,.1) 0 10px 15px;  
-} */
 #menu-txt {
     color: #ffffff;
     font-weight: bold;
@@ -101,12 +93,10 @@ menu > .menu-list > li > a {
     transition: all .1s;
     text-shadow: 10px 10px 15px #000;
 }
-
 .menu > .menu-list > li:hover > .sub-menu {
     visibility: visible;
     opacity: 1;
 }
-
 .menu > #menu-list > li > .sub-menu {
     position: absolute;
     top: 58px;
@@ -139,16 +129,107 @@ menu > .menu-list > li > a {
     margin-bottom: 20px;
 }
 #article-02 {
-    background-color: rgb(226, 226, 226);
+    background-color: rgb(236, 236, 236);
 }
-  
+form {
+    width: 100%;
+    margin-top: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+select, input {
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+}
+.input-title {
+    margin-top: 10px;
+    font-size: 12px;
+}
+.line {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.flex {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#corse-select {
+    margin-right: 20px;
+}
+#input_cash {
+    padding: 5px;
+}
+.btn-primary {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: bold;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
+    line-height: 30px;
+    border: 0;
+}
+.green {
+    --color: rgb(32, 197, 32);
+    background-color: var(--color);
+    color: white;
+}
+#form-link {
+    color: orangered;
+    font-weight: bold;
+    margin-left: 30%;
+}
+.size-5 {
+    width: 50%;
+}
+.my-icon {
+    border-radius: 50%;
+    background-color: white;
+    content: icon;
+    align-content: center;
+    width: 20px;
+    cursor: pointer;
+    background-position: center;
+}
+.gmail {
+    background-image: url("../source/gmail.png");
+}
+.size-4 {
+    width: 40%;
+}
+.size-2 {
+    width: 20%;
+}
+.column {
+    padding: 5px;
+}
 /*===================== FOOTER ======================*/
 footer {
-    background: #000;
+    background: rgb(1, 123, 160);
 }
-footer h3 {
-    font-family: Arial;
-    font-size: 20px;
-    color: #fff;
-    padding: 40px;
+#footer-contact {
+    background-color: rgb(0, 186, 243);
+}
+#footer-help {
+    background-color: rgb(0, 149, 194);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.item {
+    display: inline-block;
+    line-height: 30px;
+    white-space: nowrap;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+#footer-help a {
+    color: white;
 }

@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Quero Educação!</title>
 
-
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/font-awesome/all.css">
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.pack.js"></script>
     <script src="./js/script.js"></script>
@@ -50,12 +50,93 @@
         <article class="jumbotrom" id="article-02">
             <h2>Passo a passo Quero Bolsa Indica</h2>
             <h3>Indique amigos, e a gente paga sua mensalidade !</h3>
-            <p>I'm a Web and Java developer, and Engineering student. Nowadays I'm a hundred percent focused in study about development in general, most part web development. I'm also a Linux user.</p>
+            <p>Aqui esta sua chance de ter mensalidades da sua faculdade pagas pelo programa de iniciação Quero Bolsa.<br>Indique amigos, acumule pontos e troque pelos pagamento de suas mensalidades!</p>
+
+            <form action="submmit">
+                <h3>Participe, acumule pontos e ganhe!</h3>
+                <p>Preencha os campos abaixo:</p>
+                <p class="input-title">SITUAÇÃO</p>
+                <select name="fisrt_select" id="fisrt_select">
+                    <option value="semestre_atual">Vou me matricular esse semestre</option>
+                </select>
+                <p class="input-title">INSTITUIÇÃO DE ENSINO</p>
+                <select name="second_select" id="second_select">
+                    <option value="" disabled selected>Selecione uma universidade</option>
+                    <option value="etep">ETEP faculdades</option>
+                    <option value="univap">UNIVAP</option>
+                </select>
+                <div class="line flex">
+                    <div id="corse-select">
+                        <p class="input-title">CURSO</p>
+                        <select name="third_select" id="third_select">
+                            <option value="" disabled selected>Qual seu curso?</option>
+                            <option value="eng_comp" >Engenharia da computaçao</option>
+                            <option value="cie_comp" >Ciências da computaçao</option>
+                            <option value="hum" >Filosofia</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p class="input-title">MESALIDADE</p>
+                        <input type="number" id="input_cash">
+                    </div>
+                </div>
+                <button class="btn-primary green">Quero participar!</button>
+                <a href="#" id="form-link">Leia o regulamento</a>
+            </form>
+        </article>
+
+        <article class="jumbotrom">
+            <h2>Indique o Quero Bolsa para seus amigos</h2>
+            <h3>Envie para contatos do e-mail e compartilhe nas redes sociais.</h3>
+            <div class="line flex">
+                <div class="size-5">
+                    <p>Contato do e-mail</p>
+                    <div class="my-icon gmail"></div>
+                </div>
+                <div>
+                    <p>Redes Sociais</p>
+                    <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                </div>
+            </div>
         </article>
     </section>
 
     <footer>
-        <h3>All Rights Reserved</h3>
+        <div class="line flex" id="footer-contact">
+            <div class="column size-4">
+                <p>0800 666 1010</p>
+                <p>Seg-Sex 9 as 21h</p>
+            </div>
+            <div class="column size-2">
+                <p>Chat</p>
+            </div>
+            <div class="column size-2">
+                <p>E-mail</p>
+            </div>
+            <div class="column size-2">
+                <p>Ajuda</p>
+            </div>
+        </div>
+        <div id="footer-help">
+            <ul>
+                <li class="item"> <a href="#">Central de Ajuda</a> </li>
+                <li class="item">|</li>
+                <li class="item"> <a href="#">Vs Educa Mais Brasil</a> </li>
+                <li class="item"> <a href="#">Vs Mais Estudo</a> </li>
+                <li class="item">|</li>
+                <li class="item"> <a href="#">Mapa de Faculdades</a> </li>
+                <li class="item"> <a href="#">Revista QB</a> </li>
+                <li class="item"> <a href="#">Guia de Programas do Governo</a> </li>
+                <li class="item">|</li>
+                <li class="item"> <a href="#">Trabalhe conosco</a> </li>
+                <li class="item"> <a href="#">Imprensa</a> </li>
+            </ul>
+        </div>
+        <div class="line">
+            <ul>
+                <li class="item"></li>
+            </ul>
+        </div>
     </footer>
 
 </body>
