@@ -1,7 +1,5 @@
 /* Reset Css */
-*,
-*:after,
-*:before {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -155,9 +153,14 @@ select, input {
 }
 .flex {
     box-sizing: border-box;
-    width: 100%;
     display: flex;
     justify-content: space-around;
+}
+.flex-other {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-content: initial;
 }
 #corse-select {
     margin-right: 20px;
@@ -189,17 +192,29 @@ select, input {
 .size-5 {
     width: 50%;
 }
+/* Icon styling */
 .my-icon {
+    display: block;
     border-radius: 50%;
     background-color: white;
-    content: icon;
-    align-content: center;
-    width: 20px;
+    color: #000000;
+    width: 45px;
+    height: 45px;
     cursor: pointer;
-    background-position: center;
+    border: 1px solid #5f5f5f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.gmail {
-    background-image: url("../source/gmail.png");
+.my-icon a {
+    color: #000000;
+}
+.item {
+    display: inline-block;
+    line-height: 30px;
+    white-space: nowrap;
+    padding-right: 10px;
+    margin-bottom: 20px;
 }
 .size-4 {
     width: 40%;
@@ -216,19 +231,13 @@ footer {
 }
 #footer-contact {
     background-color: rgb(0, 186, 243);
+    margin-bottom: 0;
 }
 #footer-help {
     background-color: rgb(0, 149, 194);
     padding: 20px;
     text-align: center;
     color: white;
-}
-.item {
-    display: inline-block;
-    line-height: 30px;
-    white-space: nowrap;
-    padding-right: 10px;
-    margin-bottom: 20px;
 }
 #footer-help a {
     color: white;
