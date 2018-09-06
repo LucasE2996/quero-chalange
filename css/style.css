@@ -43,6 +43,13 @@ th {
     width: 60%;
     border-left: 1px solid rgb(170, 170, 170);
     border-right: 1px solid rgb(170, 170, 170);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#header-logo img {
+    width: 70%;
+    
 }
 #right-button {
     right: 0;
@@ -151,6 +158,9 @@ select, input {
     width: 100%;
     margin-bottom: 20px;
 }
+.no-border {
+    border: none !important;
+}
 .flex {
     box-sizing: border-box;
     display: flex;
@@ -161,6 +171,9 @@ select, input {
     display: flex;
     justify-content: space-around;
     align-content: initial;
+}
+#contact-icons {
+    width: 80%;
 }
 #corse-select {
     margin-right: 20px;
@@ -224,10 +237,20 @@ select, input {
 }
 .column {
     padding: 5px;
+    justify-content: center;
+    text-align: center;
 }
 /*===================== FOOTER ======================*/
 footer {
     background: rgb(1, 123, 160);
+}
+footer p {
+    color: white;
+}
+.footer-block {
+    border-top: 1px solid rgb(0, 186, 243);
+    padding-top: 25px;
+    padding-bottom: 10px;
 }
 #footer-contact {
     background-color: rgb(0, 186, 243);
